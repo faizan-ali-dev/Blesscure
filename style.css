@@ -1,0 +1,56 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body { 
+    font-family: 'Manrope', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, .font-serif { 
+    font-family: 'Noto Serif', serif; 
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.editorial-shadow {
+    box-shadow: 0 32px 64px -12px rgba(23, 28, 30, 0.06);
+}
+
+.tonal-transition { 
+    transition: background-color 0.5s ease; 
+}
+
+.bg-gradient-light-blue {
+    background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 100%);
+}
+
+/* Mobile Menu Styles */
+#mobile-menu {
+    transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu.translate-x-full {
+    transform: translateX(100%);
+}
+
+#mobile-menu:not(.translate-x-full) {
+    transform: translateX(0);
+}
+
+/* Custom Spacing & Utilities for Mobile-First */
+@media (max-width: 639px) {
+    .section-gap { gap: 2rem; }
+    .card-padding { padding: 1.5rem; }
+    .responsive-rounded { border-radius: 1.5rem; }
+}
+
+@media (min-width: 640px) {
+    .section-gap { gap: 4rem; }
+    .card-padding { padding: 3rem; }
+    .responsive-rounded { border-radius: 3rem; }
+}

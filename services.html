@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Blesscure Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+
+
+<link rel="icon" type="image/png" href="blesscure_logo.png">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden font-['Manrope']">
+<nav class="fixed top-0 w-full z-50 bg-[#f5fafc]/70 backdrop-blur-xl dark:bg-[#171c1e]/70 tonal-transition shadow-[0px_40px_60px_rgba(23,28,30,0.04)]">
+<div class="flex justify-between items-center px-6 md:px-12 py-3 max-w-screen-2xl mx-auto">
+<a href="index.html" class="flex items-center gap-3 group">
+    <img src="blesscure_logo.png" alt="Blesscure Clinic Logo" class="h-10 md:h-14 w-auto object-contain transition-transform group-hover:scale-105 duration-300">
+    <span class="text-lg md:text-xl font-serif font-bold tracking-widest text-[#006385] dark:text-[#c2e8ff]"></span>
+</a>
+
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-toggle" class="md:hidden text-[#006385] focus:outline-none p-2">
+    <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 hover:text-[#006385] transition-colors font-['Manrope'] text-sm tracking-widest uppercase" href="index.html">Home</a>
+<a class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 hover:text-[#006385] transition-colors font-['Manrope'] text-sm tracking-widest uppercase" href="index.html#about-me">About Me</a>
+<a class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 hover:text-[#006385] transition-colors font-['Manrope'] text-sm tracking-widest uppercase" href="index.html#about-homeopathy">About Homeopathy</a>
+<a class="text-[#006385] border-b-2 border-[#006385] pb-1 font-semibold font-['Manrope'] text-sm tracking-widest uppercase" href="services.html">Services</a>
+</div>
+
+</div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-[60] hidden backdrop-blur-sm transition-opacity"></div>
+
+<!-- Mobile Menu Drawer -->
+<div id="mobile-menu" class="fixed top-0 right-0 h-full w-4/5 max-w-sm bg-white dark:bg-[#171c1e] z-[70] translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col p-8">
+    <div class="flex justify-between items-center mb-12">
+        <span class="text-xl font-serif font-bold tracking-widest text-[#006385] dark:text-[#c2e8ff]">MENU</span>
+        <button id="mobile-menu-close" class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 focus:outline-none">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+    </div>
+    <div class="flex flex-col gap-6 font-['Manrope'] text-lg tracking-widest uppercase">
+        <a class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 hover:text-[#006385] transition-colors pl-4" href="index.html">Home</a>
+        <a class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 hover:text-[#006385] transition-colors pl-4" href="index.html#about-me">About Me</a>
+        <a class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 hover:text-[#006385] transition-colors pl-4" href="index.html#about-homeopathy">About Homeopathy</a>
+        <a class="text-[#006385] font-bold border-l-4 border-[#006385] pl-4" href="services.html">Services</a>
+    </div>
+    <div class="mt-auto pt-8 border-t border-[#006385]/10">
+        <p class="text-xs text-[#171c1e]/40 dark:text-[#f5fafc]/40 tracking-widest uppercase mb-4">Blesscure Clinic</p>
+        <div class="flex gap-4">
+            <a href="https://wa.me/923158211372" class="text-[#006385]"><span class="material-symbols-outlined">chat</span></a>
+            <a href="mailto:ahmadrazapk595@gmail.com" class="text-[#006385]"><span class="material-symbols-outlined">mail</span></a>
+        </div>
+    </div>
+</div>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center justify-center overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-gradient-to-tr from-primary via-primary-container to-secondary-container opacity-10"></div>
+<img class="w-full h-full object-cover mix-blend-overlay opacity-40" data-alt="Soft focused detail of green botanical leaves with morning dew droplets and ethereal natural sunlight filtering through" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuc1u4Ianm5d3gUxH6HOW_t1xxx4kZH2pk7sKOnww7mqqHz7yxg1Sj9y2GWHcuVX3LdXK1p2NAghxECbajugh3-F6ZsmLyQ-wSaTDzkVUvsqoGw3Pk7U30XrKOnma4sBPvsXZREIw431TQmhENOLXH4fx73e775JPkRXSyKaeOqf587h7bFIetdU_BbjbchhkqUZv7quC6dk9LITkdU2cKMG3MHisVXl7_h1lcvjY0_1GFz7NDIfxxgSjBAVBIHgQHW0BwiXy_Mg"/>
+</div>
+<div class="relative z-10 max-w-screen-xl mx-auto px-8 text-center">
+<span class="font-label text-xs tracking-[0.25em] uppercase text-primary-container font-bold mb-6 block">Our Healing Philosophy</span>
+<h1 class="font-headline text-7xl md:text-8xl text-primary mb-8 leading-[1.1] italic">
+                    Let likes be <br/> cured by likes
+                </h1>
+<p class="font-headline text-2xl md:text-3xl text-on-surface-variant max-w-2xl mx-auto font-light leading-relaxed">
+                    When Nature heals you, it heals with Compassion.
+                </p>
+</div>
+</section>
+<!-- Services Description Header -->
+<section class="px-6 md:px-8 py-20 bg-surface-container-low/30">
+    <div class="max-w-screen-2xl mx-auto text-center">
+        <h2 class="font-headline text-4xl md:text-6xl text-primary mb-6">Natural Healing by Body Systems</h2>
+        <p class="text-on-surface-variant max-w-3xl mx-auto text-lg leading-relaxed">
+            Our clinical practice is organized by biological systems to provide targeted, deeper healing that addresses the root cause of your specific health concerns.
+        </p>
+    </div>
+</section>
+
+<!-- Services Grid -->
+<section class="px-6 md:px-8 py-20 max-w-screen-2xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+        
+        <!-- Cardiovascular Box -->
+        <div class="bg-white rounded-[2rem] overflow-hidden border-2 border-blue-50 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+            <div class="aspect-video w-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop" alt="Cardiovascular health" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-blue-500 text-3xl">cardiology</span>
+                    <h3 class="font-headline text-2xl text-primary">Cardiovascular Care</h3>
+                </div>
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#006385]/60 mb-2 block">Conditions</span>
+                    <p class="text-on-surface-variant leading-relaxed">Hypertension, Palpitations, Circulatory Issues</p>
+                </div>
+                <div class="mt-auto pt-6 border-t border-blue-50">
+                    <span class="text-xs font-bold uppercase tracking-widest text-blue-500 mb-2 block">Our Approach</span>
+                    <p class="text-on-surface-variant italic leading-relaxed text-sm">Gentle remedies to regulate blood pressure, improve circulation, and reduce stress on the heart.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Respiratory Box -->
+        <div class="bg-white rounded-[2rem] overflow-hidden border-2 border-green-50 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+            <div class="aspect-video w-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800&auto=format&fit=crop" alt="Respiratory health" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-green-500 text-3xl">air</span>
+                    <h3 class="font-headline text-2xl text-primary">Respiratory Care</h3>
+                </div>
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#006385]/60 mb-2 block">Conditions</span>
+                    <p class="text-on-surface-variant leading-relaxed">Asthma, Bronchitis, Allergies, Chronic Cough</p>
+                </div>
+                <div class="mt-auto pt-6 border-t border-green-50">
+                    <span class="text-xs font-bold uppercase tracking-widest text-green-500 mb-2 block">Our Approach</span>
+                    <p class="text-on-surface-variant italic leading-relaxed text-sm">Natural treatment to ease breathing, reduce inflammation, and strengthen lung health.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nervous System Box -->
+        <div class="bg-white rounded-[2rem] overflow-hidden border-2 border-indigo-50 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+            <div class="aspect-video w-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2020&auto=format&fit=crop" alt="Mental tranquility" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-indigo-500 text-3xl">psychology</span>
+                    <h3 class="font-headline text-2xl text-primary">Nervous System Care</h3>
+                </div>
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#006385]/60 mb-2 block">Conditions</span>
+                    <p class="text-on-surface-variant leading-relaxed">Migraine, Anxiety, Depression, Insomnia</p>
+                </div>
+                <div class="mt-auto pt-6 border-t border-indigo-50">
+                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-500 mb-2 block">Our Approach</span>
+                    <p class="text-on-surface-variant italic leading-relaxed text-sm">Holistic remedies to calm the mind, improve sleep, and balance emotional health.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Digestive Box -->
+        <div class="bg-white rounded-[2rem] overflow-hidden border-2 border-amber-50 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+            <div class="aspect-video w-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop" alt="Healthy digestion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-amber-500 text-3xl">nutrition</span>
+                    <h3 class="font-headline text-2xl text-primary">Digestive Health</h3>
+                </div>
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#006385]/60 mb-2 block">Conditions</span>
+                    <p class="text-on-surface-variant leading-relaxed">Acidity, IBS, Constipation, Ulcers</p>
+                </div>
+                <div class="mt-auto pt-6 border-t border-amber-50">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-500 mb-2 block">Our Approach</span>
+                    <p class="text-on-surface-variant italic leading-relaxed text-sm">Restores digestive balance, reduces acidity, and improves overall gut function.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skin Box -->
+        <div class="bg-white rounded-[2rem] overflow-hidden border-2 border-rose-50 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+            <div class="aspect-video w-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1570172235301-4e055aa2d4b2?q=80&w=800&auto=format&fit=crop" alt="Skin care" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-rose-500 text-3xl">spa</span>
+                    <h3 class="font-headline text-2xl text-primary">Skin & Hair Care</h3>
+                </div>
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#006385]/60 mb-2 block">Conditions</span>
+                    <p class="text-on-surface-variant leading-relaxed">Acne, Eczema, Psoriasis, Hair Loss</p>
+                </div>
+                <div class="mt-auto pt-6 border-t border-rose-50">
+                    <span class="text-xs font-bold uppercase tracking-widest text-rose-500 mb-2 block">Our Approach</span>
+                    <p class="text-on-surface-variant italic leading-relaxed text-sm">Treats skin disorders from the root, promoting clear skin and healthy hair naturally.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Joint Box -->
+        <div class="bg-white rounded-[2rem] overflow-hidden border-2 border-cyan-50 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+            <div class="aspect-video w-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1508672019048-8957e8741366?q=80&w=800&auto=format&fit=crop" alt="Joint wellness" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-cyan-500 text-3xl">accessibility_new</span>
+                    <h3 class="font-headline text-2xl text-primary">Joint & Muscle Care</h3>
+                </div>
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#006385]/60 mb-2 block">Conditions</span>
+                    <p class="text-on-surface-variant leading-relaxed">Arthritis, Back Pain, Sciatica, Gout</p>
+                </div>
+                <div class="mt-auto pt-6 border-t border-cyan-50">
+                    <span class="text-xs font-bold uppercase tracking-widest text-cyan-500 mb-2 block">Our Approach</span>
+                    <p class="text-on-surface-variant italic leading-relaxed text-sm">Reduces inflammation, relieves pain, and enhances mobility without side effects.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reproductive Box -->
+        <div class="bg-white rounded-[2rem] overflow-hidden border-2 border-violet-50 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+            <div class="aspect-video w-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop" alt="Reproductive wellness" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-violet-500 text-3xl">female</span>
+                    <h3 class="font-headline text-2xl text-primary">Reproductive Health</h3>
+                </div>
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#006385]/60 mb-2 block">Conditions</span>
+                    <p class="text-on-surface-variant leading-relaxed">PCOS, Infertility, Menstrual Issues, Male Weakness</p>
+                </div>
+                <div class="mt-auto pt-6 border-t border-violet-50">
+                    <span class="text-xs font-bold uppercase tracking-widest text-violet-500 mb-2 block">Our Approach</span>
+                    <p class="text-on-surface-variant italic leading-relaxed text-sm">Balances hormones and improves reproductive health safely and naturally.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Child Care Box -->
+        <div class="bg-white rounded-[2rem] overflow-hidden border-2 border-sky-50 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+            <div class="aspect-video w-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?q=80&w=800&auto=format&fit=crop" alt="Pediatric care" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-sky-500 text-3xl">child_care</span>
+                    <h3 class="font-headline text-2xl text-primary">Child Care (Pediatrics)</h3>
+                </div>
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#006385]/60 mb-2 block">Conditions</span>
+                    <p class="text-on-surface-variant leading-relaxed">Tonsillitis, Weak Immunity, Growth Issues</p>
+                </div>
+                <div class="mt-auto pt-6 border-t border-sky-50">
+                    <span class="text-xs font-bold uppercase tracking-widest text-sky-500 mb-2 block">Our Approach</span>
+                    <p class="text-on-surface-variant italic leading-relaxed text-sm">Safe and gentle remedies to boost immunity and support healthy development.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hormonal Box -->
+        <div class="bg-white rounded-[2rem] overflow-hidden border-2 border-teal-50 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+            <div class="aspect-video w-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop" alt="Clinical health care" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-teal-500 text-3xl">opacity</span>
+                    <h3 class="font-headline text-2xl text-primary">Hormonal Health</h3>
+                </div>
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#006385]/60 mb-2 block">Conditions</span>
+                    <p class="text-on-surface-variant leading-relaxed">Thyroid Disorders, Diabetes, Hormonal Imbalance</p>
+                </div>
+                <div class="mt-auto pt-6 border-t border-teal-50">
+                    <span class="text-xs font-bold uppercase tracking-widest text-teal-500 mb-2 block">Our Approach</span>
+                    <p class="text-on-surface-variant italic leading-relaxed text-sm">Supports endocrine balance and long-term metabolic health.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mental Wellness Box -->
+        <div class="bg-white rounded-[2rem] overflow-hidden border-2 border-emerald-50 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+            <div class="aspect-video w-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2070&auto=format&fit=crop" alt="Peace of mind" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-emerald-500 text-3xl">self_improvement</span>
+                    <h3 class="font-headline text-2xl text-primary">Mental Wellness</h3>
+                </div>
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#006385]/60 mb-2 block">Conditions</span>
+                    <p class="text-on-surface-variant leading-relaxed">Stress, OCD, Emotional Disorders</p>
+                </div>
+                <div class="mt-auto pt-6 border-t border-emerald-50">
+                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-500 mb-2 block">Our Approach</span>
+                    <p class="text-on-surface-variant italic leading-relaxed text-sm">Focus on mind-body healing to improve emotional stability and quality of life.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Immunity Box -->
+        <div class="bg-white rounded-[2rem] overflow-hidden border-2 border-orange-50 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
+            <div class="aspect-video w-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=2070&auto=format&fit=crop" alt="Strong immunity" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-orange-500 text-3xl">shield</span>
+                    <h3 class="font-headline text-2xl text-primary">Immunity & Chronic Care</h3>
+                </div>
+                <div class="mb-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#006385]/60 mb-2 block">Conditions</span>
+                    <p class="text-on-surface-variant leading-relaxed">Recurrent Infections, Low Immunity</p>
+                </div>
+                <div class="mt-auto pt-6 border-t border-orange-50">
+                    <span class="text-xs font-bold uppercase tracking-widest text-orange-500 mb-2 block">Our Approach</span>
+                    <p class="text-on-surface-variant italic leading-relaxed text-sm">Strengthens the body's natural defense system for lasting wellness.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Why Choose Blesscure Feature Section -->
+<section class="px-6 md:px-8 py-24 bg-[#f8fafc]">
+    <div class="max-w-screen-2xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-6 block">The Blesscure Advantage</span>
+                <h2 class="font-headline text-5xl text-primary leading-tight mb-8 italic">✨ Why Choose Blesscure?</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-[#006385]/10 flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-[#006385]">check_circle</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#006385] mb-1">100% Natural & Safe Treatment</h4>
+                            <p class="text-on-surface-variant text-sm">Gentle remedies derived from nature with zero side effects.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-[#006385]/10 flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-[#006385]">check_circle</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#006385] mb-1">Treats Root Cause, Not Just Symptoms</h4>
+                            <p class="text-on-surface-variant text-sm">A holistic approach targeting the underlying medical imbalance.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-[#006385]/10 flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-[#006385]">check_circle</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#006385] mb-1">Personalized Remedies</h4>
+                            <p class="text-on-surface-variant text-sm">Every treatment is uniquely tailored to your physiological profile.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-[#006385]/10 flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-[#006385]">check_circle</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#006385] mb-1">Suitable for All Ages</h4>
+                            <p class="text-on-surface-variant text-sm">Safe clinical excellence for infants, children, adults, and seniors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="aspect-square rounded-full border-8 border-white shadow-2xl overflow-hidden relative z-10">
+                    <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2070&auto=format&fit=crop" alt="Professional clinical care" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -top-10 -right-10 w-48 h-48 bg-primary-fixed/30 rounded-full blur-3xl -z-0"></div>
+                <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-secondary-fixed/20 rounded-full blur-3xl -z-0"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+<!-- Footer Shell -->
+<footer class="w-full relative bottom-0 mt-20 pt-16 bg-[#eff4f6] dark:bg-[#171c1e] text-[#006385] dark:text-[#c2e8ff]">
+<div class="flex flex-col md:flex-row justify-between items-start px-12 pb-10 max-w-screen-2xl mx-auto w-full gap-12 border-b border-[#006385]/10">
+<div class="md:w-1/2 space-y-6">
+<div class="flex items-center gap-3">
+    <img src="blesscure_logo.png" alt="Blesscure Clinic Logo" class="h-12 md:h-16 w-auto object-contain">
+    <span class="text-xl md:text-2xl font-serif font-bold tracking-widest text-[#006385] dark:text-[#c2e8ff]"></span>
+</div>
+<p class="font-['Manrope'] text-sm tracking-wide leading-relaxed max-w-md text-[#171c1e]/70 dark:text-[#f5fafc]/70">© 2026 Blesscure Clinic. The Luminescent Sanctuary of Healing. Proudly serving the community with academic excellence and compassionate homeopathic care.</p>
+</div>
+<div class="space-y-4">
+<h5 class="font-serif font-bold text-lg">Quick Links</h5>
+<ul class="space-y-2 font-['Manrope'] text-sm tracking-wide">
+<li><a class="text-[#171c1e]/60 dark:text-[#f5fafc]/60 hover:text-[#007ea7] underline-offset-4 hover:underline transition-all" href="index.html">Home</a></li>
+<li><a class="text-[#171c1e]/60 dark:text-[#f5fafc]/60 hover:text-[#007ea7] underline-offset-4 hover:underline transition-all" href="index.html#about-me">About Me</a></li>
+<li><a class="text-[#171c1e]/60 dark:text-[#f5fafc]/60 hover:text-[#007ea7] underline-offset-4 hover:underline transition-all" href="index.html#about-homeopathy">About Homeopathy</a></li>
+<li><a class="text-[#171c1e]/60 dark:text-[#f5fafc]/60 hover:text-[#007ea7] underline-offset-4 hover:underline transition-all" href="services.html">Services</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-serif font-bold text-lg">Location</h5>
+<p class="font-['Manrope'] text-sm tracking-wide text-[#171c1e]/70 dark:text-[#f5fafc]/70 leading-relaxed">
+                    Layyah<br/>
+                    Punjab, Pakistan
+                </p>
+<div class="flex gap-4 mt-6">
+<a href="https://www.facebook.com/share/14hfsoQLPZy/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#006385]/10 hover:bg-[#006385] text-[#006385] hover:text-white transition-all duration-300" title="Facebook">
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+</a>
+<a href="https://www.instagram.com/ahmadraza595g?utm_source=qr&igsh=dGFubXE3eTVjeHQ=" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#006385]/10 hover:bg-[#006385] text-[#006385] hover:text-white transition-all duration-300" title="Instagram">
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.62.074-2.734.331-3.708 1.305-.974.974-1.231 2.087-1.305 3.708-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.074 1.62.331 2.734 1.305 3.708.974.974 2.087 1.231 3.708 1.305 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.62-.074 2.734-.331 3.708-1.305.974-.974 1.231-2.087 1.305-3.708.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.074-1.62-.331-2.734-1.305-3.708-.974-.974-2.087-1.231-3.708-1.305-1.28-.058-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+</a>
+<a href="https://www.tiktok.com/@ahmadrazapk595?_r=1&_t=ZS-95HYoMAgKiC" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#006385]/10 hover:bg-[#006385] text-[#006385] hover:text-white transition-all duration-300" title="TikTok">
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg>
+</a>
+<a href="https://wa.me/923158211372" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#006385]/10 hover:bg-[#006385] text-[#006385] hover:text-white transition-all duration-300" title="WhatsApp Us">
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-4.821 7.453c-1.82 0-3.602-.49-5.162-1.413l-.37-.221-3.841 1.01 1.027-3.743-.243-.387a10.873 10.873 0 01-1.666-5.836c0-6.012 4.887-10.898 10.899-10.898a10.891 10.891 0 0110.897 10.899c0 6.012-4.887 10.898-10.899 10.898m10.748-11.41c0-5.852-4.757-10.61-10.61-10.61-5.852 0-10.609 4.758-10.609 10.61 0 1.874.489 3.705 1.416 5.32l-1.505 5.503 5.626-1.474a10.551 10.551 0 005.071 1.309c5.853 0 10.61-4.758 10.61-10.61z"/></svg>
+</a>
+<a href="mailto:ahmadrazapk595@gmail.com" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#006385]/10 hover:bg-[#006385] text-[#006385] hover:text-white transition-all duration-300" title="Email Us">
+    <span class="material-symbols-outlined text-xl" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto px-12 pb-8 border-t border-[#006385]/10 pt-8 text-center text-xs tracking-widest uppercase text-[#171c1e]/40">
+            Harmonizing health since 1998 • Registered Homeopathic Practice
+        </div>
+</footer>
+</body></html>

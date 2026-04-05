@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+
+
+<link rel="icon" type="image/png" href="blesscure_logo.png">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f5fafc]/70 backdrop-blur-xl dark:bg-[#171c1e]/70 tonal-transition shadow-[0px_40px_60px_rgba(23,28,30,0.04)]">
+<div class="flex justify-between items-center px-6 md:px-12 py-3 max-w-screen-2xl mx-auto">
+<a href="index.html" class="flex items-center gap-3 group">
+    <img src="blesscure_logo.png" alt="Blesscure Clinic Logo" class="h-10 md:h-14 w-auto object-contain transition-transform group-hover:scale-105 duration-300">
+    <span class="text-lg md:text-xl font-serif font-bold tracking-widest text-[#006385] dark:text-[#c2e8ff]"></span>
+</a>
+
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-toggle" class="md:hidden text-[#006385] focus:outline-none p-2">
+    <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#006385] border-b-2 border-[#006385] pb-1 font-semibold font-['Manrope'] text-sm tracking-widest uppercase" href="index.html">Home</a>
+<a class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 hover:text-[#006385] transition-colors font-['Manrope'] text-sm tracking-widest uppercase" href="#about-me">About Me</a>
+<a class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 hover:text-[#006385] transition-colors font-['Manrope'] text-sm tracking-widest uppercase" href="#about-homeopathy">About Homeopathy</a>
+<a class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 hover:text-[#006385] transition-colors font-['Manrope'] text-sm tracking-widest uppercase" href="services.html">Services</a>
+</div>
+
+</div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-[60] hidden backdrop-blur-sm transition-opacity"></div>
+
+<!-- Mobile Menu Drawer -->
+<div id="mobile-menu" class="fixed top-0 right-0 h-full w-4/5 max-w-sm bg-white dark:bg-[#171c1e] z-[70] translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col p-8">
+    <div class="flex justify-between items-center mb-12">
+        <span class="text-xl font-serif font-bold tracking-widest text-[#006385] dark:text-[#c2e8ff]">MENU</span>
+        <button id="mobile-menu-close" class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 focus:outline-none">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+    </div>
+    <div class="flex flex-col gap-6 font-['Manrope'] text-lg tracking-widest uppercase">
+        <a class="text-[#006385] font-bold border-l-4 border-[#006385] pl-4" href="index.html">Home</a>
+        <a class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 hover:text-[#006385] transition-colors pl-4" href="#about-me">About Me</a>
+        <a class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 hover:text-[#006385] transition-colors pl-4" href="#about-homeopathy">About Homeopathy</a>
+        <a class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 hover:text-[#006385] transition-colors pl-4" href="services.html">Services</a>
+    </div>
+    <div class="mt-auto pt-8 border-t border-[#006385]/10">
+        <p class="text-xs text-[#171c1e]/40 dark:text-[#f5fafc]/40 tracking-widest uppercase mb-4">Blesscure Clinic</p>
+        <div class="flex gap-4">
+            <a href="https://wa.me/923158211372" class="text-[#006385]"><span class="material-symbols-outlined">chat</span></a>
+            <a href="mailto:ahmadrazapk595@gmail.com" class="text-[#006385]"><span class="material-symbols-outlined">mail</span></a>
+        </div>
+    </div>
+</div>
+<main class="pt-0">
+<!-- Hero Section -->
+<section class="relative min-h-[600px] lg:max-h-[870px] flex items-center overflow-hidden bg-gradient-light-blue py-20 lg:py-0">
+<div class="container max-w-screen-2xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Profile Image Asymmetry -->
+<div class="lg:col-span-5 relative flex justify-center lg:justify-start">
+<div class="relative w-64 h-64 md:w-[380px] md:h-[380px]">
+<!-- Decorative background element -->
+<div class="absolute -top-6 -left-6 w-full h-full bg-primary-fixed/30 rounded-full blur-3xl"></div>
+<img alt="Dr. Ahmad Raza" class="w-full h-full object-cover rounded-full border-[6px] border-surface-container-lowest shadow-2xl relative z-10" src="Ahmad%20Raza.jpeg"/>
+</div>
+</div>
+<!-- Headline Content -->
+<div class="lg:col-span-7 flex flex-col items-start gap-6 lg:gap-8">
+<div class="space-y-2">
+<span class="inline-block px-4 py-1.5 bg-primary-fixed text-on-primary-fixed rounded-full text-[10px] font-bold tracking-[0.2em] uppercase">Trusted Healing</span>
+<h1 class="font-serif text-4xl md:text-6xl lg:text-7xl leading-tight text-[#006385]">
+                            Dr. Ahmad Raza
+                        </h1>
+
+<p class="font-body text-base md:text-lg text-outline font-medium tracking-wide">
+                            Homeopathic Physician (BHMS-RHMP)
+                        </p>
+</div>
+<div class="max-w-2xl">
+<blockquote class="font-serif text-lg md:text-xl leading-relaxed italic text-on-primary-container/90 border-l-4 border-primary-fixed-dim pl-6 md:pl-8 py-2">
+                            “The sole mission of a Physician is to cure rapidly, gently and permanently."
+                        </blockquote>
+</div>
+
+</div>
+</div>
+</section>
+<!-- About Us Section (Two Column) -->
+<section id="about-me" class="py-32 bg-surface-container-low relative overflow-hidden">
+<!-- Asymmetric Background Accent -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary-fixed/10 -skew-x-6 translate-x-20"></div>
+<div class="container max-w-screen-2xl mx-auto px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+<!-- Left Column: Vision & Identity -->
+<div class="space-y-12">
+<div class="space-y-6">
+
+</div>
+<p class="font-body text-lg leading-relaxed text-on-surface-variant max-w-xl">
+I am Bachelor of Homeopathic Medical Science (BHMS) regular student, currently studying in Islamia University of Bahawalpur. Honhaar Scholarship and PM laptop schehme holder.Inshallah Future Homeopathic Practitioner.                         </p>
+<!-- Bento Grid Mini for Merits -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-[#007bff] text-4xl mb-4" data-icon="school">school</span>
+<h4 class="font-serif text-xl font-bold mb-2">Academic Scholar</h4>
+<p class="text-sm text-on-surface-variant">Proud recipient of the Honhaar Scholarship and PM Laptop Scheme merit awards.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/10 hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-[#007bff] text-4xl mb-4" data-icon="clinical_notes">clinical_notes</span>
+<h4 class="font-serif text-xl font-bold mb-2">Future Practice</h4>
+<p class="text-sm text-on-surface-variant">Training to provide gentle, permanent solutions for chronic and acute ailments.</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Visual Narrative -->
+<div class="relative mt-12 lg:mt-0">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative">
+<img alt="Homeopathic Consultation" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJV15bsDn0clbP84AY8UwSlVBW-Vb5M1ipaljUfKj6Fnr2MeDij8zkpkUegERg0VmDb2erGKFTed-4Py0FdXp-v55cKhVy8TE5S1TvfGiNvr-3OOaW19N4q6C2h7bOowoEZIzd_jiTmVPeS5qA4g3mT_5NZ3UQMY7kbSeVmbWM7s2Pp3M7tf-orkmGMKdblkN2NHJl5m8Lmv_AgUD1_6mKoGE9OVJryCCipeJNYMgcekyeeoLkax7SiTtU0vVuZuobM3vZA5irxw"/>
+</div>
+<!-- Floating Card -->
+<div class="absolute -bottom-10 -left-10 md:w-80 bg-primary-container text-white p-10 rounded-xl shadow-2xl hidden md:block">
+<span class="material-symbols-outlined text-primary-fixed text-5xl mb-6" data-icon="workspace_premium">workspace_premium</span>
+<p class="font-serif italic text-2xl leading-snug">
+                                Committed to the highest standards of homeopathic training.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Homeopathy Section -->
+<div id="about-homeopathy">
+<!-- Hero Section -->
+<section class="py-16 md:py-24 grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 items-center px-6 md:px-8 max-w-screen-2xl mx-auto">
+<div class="md:col-span-7">
+<span class="label-md uppercase tracking-[0.2em] text-[#006385] mb-4 md:mb-6 block font-bold text-xs md:text-sm">The Science of Nature</span>
+<h1 class="text-4xl md:text-7xl lg:text-8xl text-[#006385] leading-tight mb-6 md:mb-8">About <span class="italic">Homeopathy</span></h1>
+<p class="text-on-surface-variant max-w-xl leading-relaxed text-base md:text-lg">
+            A holistic approach to healing that treats the person, not just the disease. We bridge the gap between ancient botanical wisdom and clinical precision.
+        </p>
+</div>
+<div class="md:col-span-5 relative">
+<div class="rounded-xl overflow-hidden aspect-[4/5] bg-surface-container-low shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close-up of a delicate white flower with crystalline dew drops, soft blue bokeh background, professional editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD825e0ULJBzNYQGcmAF6qCBX2dSX-IV5rKQL8mFUaV-htBLfiJNQvd0UQOFJN7ZM0jVBjmf06tyncKtk_P__5iVIbXW7UoDcxl1add9iDpHuv4xaakypgZC-PswcvfICrfBpmvb4Ea3NEu9fppd2yngEF4UJEBwiGck8vHDVq9C5CSbcpFsyZbwDCex0QHYFqkGbL69UDvbZE1qndXGSr2GIfh3j0PqeBRDbJ76Tf3MOvnJJmSathIGiiP0yWCp5q_K1XYkkXxFg"/>
+</div>
+<!-- Floating Decorative Element -->
+</div>
+</section>
+<!-- Section 1: Facts -->
+<section class="py-24 px-8 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-surface-container-low p-8 md:p-16 rounded-xl flex flex-col justify-between min-h-[350px] md:min-h-[400px] border border-outline-variant/20">
+<div class="max-w-md">
+<h2 class="text-3xl md:text-5xl text-[#006385] font-serif mb-4 md:mb-6">Global Scale of Healing</h2>
+<p class="text-on-surface-variant text-base md:text-lg leading-relaxed">
+                    Homeopathy is recognized by the WHO as the <span class="text-[#006385] font-bold">second largest medical system</span> in the world. It is a preferred choice for millions seeking a gentle yet profound path to health.
+                </p>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-end gap-6 md:gap-8 mt-8 sm:mt-0">
+<div>
+<div class="text-5xl md:text-7xl font-serif text-[#006385]">200M+</div>
+<div class="label-md uppercase tracking-widest text-on-surface-variant/80 mt-1 md:mt-2 text-[10px] md:text-xs">Active Users Worldwide</div>
+</div>
+<div class="hidden sm:block h-20 w-px bg-[#006385]/20"></div>
+<div>
+<div class="text-5xl md:text-7xl font-serif text-[#006385]">80+</div>
+<div class="label-md uppercase tracking-widest text-on-surface-variant/80 mt-1 md:mt-2 text-[10px] md:text-xs">Countries Practicing</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-12 rounded-xl flex flex-col items-center justify-center text-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-[#006385] text-6xl mb-8" data-icon="public">public</span>
+<h3 class="text-3xl text-[#006385] font-serif mb-4">Universal Acceptance</h3>
+<p class="text-on-surface-variant leading-relaxed">From the royal families of Europe to rural communities in Asia, homeopathy transcends borders with its universal principles.</p>
+</div>
+</div>
+</section>
+<!-- Section 2: Principles -->
+
+<!-- Section 3: Why Homeopathy -->
+<section class="py-16 md:py-32 relative overflow-hidden px-6 md:px-8 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+<div class="relative order-2 md:order-1 px-4 md:px-0">
+<div class="rounded-full overflow-hidden w-full aspect-square border-8 border-[#eff4f6] shadow-xl">
+<img class="w-full h-full object-cover" data-alt="Macro photo of glass dropper bottle with clear liquid and fresh blue-tinted herbs on a minimalist marble background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLSnzkCLY71QGJixDXr1F6qBWfbaOrZ3_dOKrQtHKqpgDyJd19ywMJI7j1JT_dFsKKPJYgA2jTaoLKlFoF-wQItnCBv3JjgRgIYSnCOBC63Al0qskG0FRhWzsy9f_vd2o485U0PLkgKa1sF6RaTTb7W7JuV9FfJhzCx2dBhO3dz_a8mtzveZewh_nxm9eUF9qNkV9Lt_Vj8_Bapa5OL53TZCD2FESwXPPflM81f78EVemVQzye8A8WeOusa0wYQGGVYtOE91iXxQ"/>
+</div>
+<div class="absolute -top-10 -right-10 w-32 h-32 md:w-48 md:h-48 bg-[#76d1ff]/20 rounded-full blur-3xl"></div>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="text-3xl md:text-5xl text-[#006385] font-serif mb-8 md:mb-12"><span class="italic">Why Homeopathy?</span></h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Benefit 1 -->
+<div class="bg-[#d0e1ec] border border-outline-variant/10 p-5 rounded-2xl flex items-center gap-4 hover:bg-[#c2d6e4] transition-all duration-300 group">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[#006385] text-xl" data-icon="history">history</span>
+</div>
+<span class="text-[#006385] font-serif font-semibold text-sm leading-tight">Long term results</span>
+</div>
+<!-- Benefit 2 -->
+<div class="bg-[#d0e1ec] border border-outline-variant/10 p-5 rounded-2xl flex items-center gap-4 hover:bg-[#c2d6e4] transition-all duration-300 group">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[#006385] text-xl" data-icon="verified">verified</span>
+</div>
+<span class="text-[#006385] font-serif font-semibold text-sm leading-tight">Permanent cure</span>
+</div>
+<!-- Benefit 3 -->
+<div class="bg-[#d0e1ec] border border-outline-variant/10 p-5 rounded-2xl flex items-center gap-4 hover:bg-[#c2d6e4] transition-all duration-300 group">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[#006385] text-xl" data-icon="health_and_safety">health_and_safety</span>
+</div>
+<span class="text-[#006385] font-serif font-semibold text-sm leading-tight">No suppression</span>
+</div>
+<!-- Benefit 4 -->
+<div class="bg-[#d0e1ec] border border-outline-variant/10 p-5 rounded-2xl flex items-center gap-4 hover:bg-[#c2d6e4] transition-all duration-300 group">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[#006385] text-xl" data-icon="spa">spa</span>
+</div>
+<span class="text-[#006385] font-serif font-semibold text-sm leading-tight">No side effects</span>
+</div>
+<!-- Benefit 5 -->
+<div class="bg-[#d0e1ec] border border-outline-variant/10 p-5 rounded-2xl flex items-center gap-4 hover:bg-[#c2d6e4] transition-all duration-300 group">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[#006385] text-xl" data-icon="nature">nature</span>
+</div>
+<span class="text-[#006385] font-serif font-semibold text-sm leading-tight">Naturally effective</span>
+</div>
+<!-- Benefit 6 -->
+<div class="bg-[#d0e1ec] border border-outline-variant/10 p-5 rounded-2xl flex items-center gap-4 hover:bg-[#c2d6e4] transition-all duration-300 group">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[#006385] text-xl" data-icon="favorite">favorite</span>
+</div>
+<span class="text-[#006385] font-serif font-semibold text-sm leading-tight">Holistic & gentle healing</span>
+</div>
+<!-- Benefit 7 -->
+<div class="bg-[#d0e1ec] border border-outline-variant/10 p-5 rounded-2xl flex items-center gap-4 hover:bg-[#c2d6e4] transition-all duration-300 group">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[#006385] text-xl" data-icon="person_search">person_search</span>
+</div>
+<span class="text-[#006385] font-serif font-semibold text-sm leading-tight">Individualized treatment</span>
+</div>
+<!-- Benefit 8 -->
+<div class="bg-[#d0e1ec] border border-outline-variant/10 p-5 rounded-2xl flex items-center gap-4 hover:bg-[#c2d6e4] transition-all duration-300 group">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[#006385] text-xl" data-icon="psychology">psychology</span>
+</div>
+<span class="text-[#006385] font-serif font-semibold text-sm leading-tight">Treats root cause</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Nature Inspired Bento Section -->
+
+<!-- Contact Section -->
+<section id="contact" class="py-32 bg-surface-container-low px-8">
+<div class="max-w-screen-2xl mx-auto">
+
+<!-- Two Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Left Side: Booking Form -->
+<div class="lg:col-span-12 bg-gradient-to-br from-surface-container-low to-secondary-container/20 rounded-xl p-8 md:p-12 border border-outline-variant/10">
+<div class="mb-10">
+<h2 class="text-3xl text-primary mb-2">Request an Appointment</h2>
+</div>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="label-md font-bold text-on-surface-variant block ml-1">Full Name</label>
+<input class="w-full bg-surface-container-highest/50 border-none rounded-lg px-6 py-4 focus:ring-2 focus:ring-primary/30 transition-all duration-300 outline-none" placeholder="Dr. Jane Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="label-md font-bold text-on-surface-variant block ml-1">Email Address</label>
+<input class="w-full bg-surface-container-highest/50 border-none rounded-lg px-6 py-4 focus:ring-2 focus:ring-primary/30 transition-all duration-300 outline-none" placeholder="jane@example.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="label-md font-bold text-on-surface-variant block ml-1">Service Required</label>
+<select class="w-full bg-surface-container-highest/50 border-none rounded-lg px-6 py-4 focus:ring-2 focus:ring-primary/30 transition-all duration-300 outline-none appearance-none">
+<option>Initial Consultation</option>
+<option>Follow-up Visit</option>
+<option>Chronic Care Review</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="label-md font-bold text-on-surface-variant block ml-1">Preferred Date</label>
+<input class="w-full bg-surface-container-highest/50 border-none rounded-lg px-6 py-4 focus:ring-2 focus:ring-primary/30 transition-all duration-300 outline-none" type="date"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="label-md font-bold text-on-surface-variant block ml-1">How can we help you?</label>
+<textarea class="w-full bg-surface-container-highest/50 border-none rounded-lg px-6 py-4 focus:ring-2 focus:ring-primary/30 transition-all duration-300 outline-none" placeholder="Briefly describe your health goals..." rows="4"></textarea>
+</div>
+<button class="w-full md:w-auto bg-gradient-to-r from-[#006385] to-[#007ea7] text-on-primary rounded-full px-12 py-5 text-lg font-bold hover:scale-95 transition-all duration-300 shadow-xl shadow-[#006385]/20" type="submit">
+                        Book Appointment
+                    </button>
+</form>
+</div>
+
+
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full relative bottom-0 mt-20 pt-16 bg-[#eff4f6] dark:bg-[#171c1e] text-[#006385] dark:text-[#c2e8ff]">
+<div class="flex flex-col md:flex-row justify-between items-start px-12 pb-10 max-w-screen-2xl mx-auto w-full gap-12 border-b border-[#006385]/10">
+<div class="md:w-1/2 space-y-6">
+<div class="flex items-center gap-3">
+    <img src="blesscure_logo.png" alt="Blesscure Clinic Logo" class="h-12 md:h-16 w-auto object-contain">
+    <span class="text-xl md:text-2xl font-serif font-bold tracking-widest text-[#006385] dark:text-[#c2e8ff]"></span>
+</div>
+<p class="font-['Manrope'] text-sm tracking-wide leading-relaxed max-w-md text-[#171c1e]/70 dark:text-[#f5fafc]/70">© 2026 Blesscure Clinic. The Luminescent Sanctuary of Healing. Proudly serving the community with academic excellence and compassionate homeopathic care.</p>
+</div>
+<div class="space-y-4">
+<h5 class="font-serif font-bold text-lg">Quick Links</h5>
+<ul class="space-y-2 font-['Manrope'] text-sm tracking-wide">
+<li><a class="text-[#171c1e]/60 dark:text-[#f5fafc]/60 hover:text-[#007ea7] underline-offset-4 hover:underline transition-all" href="index.html">Home</a></li>
+<li><a class="text-[#171c1e]/60 dark:text-[#f5fafc]/60 hover:text-[#007ea7] underline-offset-4 hover:underline transition-all" href="#about-me">About Me</a></li>
+<li><a class="text-[#171c1e]/60 dark:text-[#f5fafc]/60 hover:text-[#007ea7] underline-offset-4 hover:underline transition-all" href="#about-homeopathy">About Homeopathy</a></li>
+<li><a class="text-[#171c1e]/60 dark:text-[#f5fafc]/60 hover:text-[#007ea7] underline-offset-4 hover:underline transition-all" href="services.html">Services</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-serif font-bold text-lg">Location</h5>
+<p class="font-['Manrope'] text-sm tracking-wide text-[#171c1e]/70 dark:text-[#f5fafc]/70 leading-relaxed">
+                    Layyah<br/>
+                    Punjab, Pakistan
+                </p>
+<div class="flex gap-4 mt-6">
+<a href="https://www.facebook.com/share/14hfsoQLPZy/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#006385]/10 hover:bg-[#006385] text-[#006385] hover:text-white transition-all duration-300" title="Facebook">
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+</a>
+<a href="https://www.instagram.com/ahmadraza595g?utm_source=qr&igsh=dGFubXE3eTVjeHQ=" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#006385]/10 hover:bg-[#006385] text-[#006385] hover:text-white transition-all duration-300" title="Instagram">
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.62.074-2.734.331-3.708 1.305-.974.974-1.231 2.087-1.305 3.708-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.074 1.62.331 2.734 1.305 3.708.974.974 2.087 1.231 3.708 1.305 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.62-.074 2.734-.331 3.708-1.305.974-.974 1.231-2.087 1.305-3.708.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.074-1.62-.331-2.734-1.305-3.708-.974-.974-2.087-1.231-3.708-1.305-1.28-.058-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+</a>
+<a href="https://www.tiktok.com/@ahmadrazapk595?_r=1&_t=ZS-95HYoMAgKiC" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#006385]/10 hover:bg-[#006385] text-[#006385] hover:text-white transition-all duration-300" title="TikTok">
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg>
+</a>
+<a href="https://wa.me/923158211372" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#006385]/10 hover:bg-[#006385] text-[#006385] hover:text-white transition-all duration-300" title="WhatsApp Us">
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-4.821 7.453c-1.82 0-3.602-.49-5.162-1.413l-.37-.221-3.841 1.01 1.027-3.743-.243-.387a10.873 10.873 0 01-1.666-5.836c0-6.012 4.887-10.898 10.899-10.898a10.891 10.891 0 0110.897 10.899c0 6.012-4.887 10.898-10.899 10.898m10.748-11.41c0-5.852-4.757-10.61-10.61-10.61-5.852 0-10.609 4.758-10.609 10.61 0 1.874.489 3.705 1.416 5.32l-1.505 5.503 5.626-1.474a10.551 10.551 0 005.071 1.309c5.853 0 10.61-4.758 10.61-10.61z"/></svg>
+</a>
+<a href="mailto:ahmadrazapk595@gmail.com" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#006385]/10 hover:bg-[#006385] text-[#006385] hover:text-white transition-all duration-300" title="Email Us">
+    <span class="material-symbols-outlined text-xl" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="py-8 text-center bg-[#f5fafc] dark:bg-[#111618]">
+<p class="text-[10px] uppercase tracking-[0.3em] opacity-60">Handcrafted for Holistic Wellness • Professionalism &amp; Care</p>
+</div>
+</footer>
+</body></html>
