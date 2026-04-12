@@ -90,4 +90,72 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.remove('overflow-hidden');
         });
     });
+
+
+    // ScrollSpy & Active Link logic
+    const sections = document.querySelectorAll('section[id], div[id^="about-"], footer[id]');
+    const navLinks = document.querySelectorAll('nav .hidden.md\\:flex a, #mobile-menu .flex-col a');
+
+    const dtHighlight = ['text-[#006385]', 'border-b-2', 'border-[#006385]', 'pb-1', 'font-semibold'];
+    const dtNormal = ['text-[#171c1e]/70', 'dark:text-[#f5fafc]/70'];
+    
+    const mobHighlight = ['text-[#006385]', 'font-bold', 'border-l-4', 'border-[#006385]'];
+    const mobNormal = ['text-[#171c1e]/70', 'dark:text-[#f5fafc]/70'];
+
+    function setActiveLink(targetHref) {
+        navLinks.forEach(link => {
+            const isMobile = link.parentElement.classList.contains('flex-col');
+            const href = link.getAttribute('href');
+            
+            let isActive = false;
+            
+            if (href === targetHref) {
+                isActive = true;
+            } else if (targetHref === '#home' && (href === 'index.html' || href === '#')) {
+                isActive = true;
+            }
+
+            if (isActive) {
+                if (isMobile) {
+                    link.classList.remove(...mobNormal);
+                    link.classList.add(...mobHighlight);
+                } else {
+                    link.classList.remove(...dtNormal);
+                    link.classList.add(...dtHighlight);
+                }
+            } else {
+                if (isMobile) {
+                    link.classList.remove(...mobHighlight);
+                    link.classList.add(...mobNormal);
+                } else {
+                    link.classList.remove(...dtHighlight);
+                    link.classList.add(...dtNormal);
+                }
+            }
+        });
+    }
+
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+    if (currentPage.includes('services.html')) {
+        setActiveLink('services.html');
+    } else {
+        // Set up ScrollSpy for index.html
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -70% 0px', // Trigger when section passes top 20%
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setActiveLink('#' + entry.target.id);
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(sec => observer.observe(sec));
+    }
+
 });
