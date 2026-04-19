@@ -4,9 +4,31 @@ html {
 }
 
 body { 
+    --on-surface-variant: #40484c;
+    --outline-variant: #bfc8cc;
     font-family: 'Manrope', sans-serif; 
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+/* Performance Optimizations */
+@media (max-width: 1024px) {
+    .bg-fixed {
+        background-attachment: scroll !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .backdrop-blur-xl {
+        backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(8px) !important;
+    }
+}
+
+/* GPU Acceleration for Animations */
+[data-aos] {
+    will-change: transform, opacity;
 }
 
 h1, h2, h3, .font-serif { 
