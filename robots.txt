@@ -1,0 +1,8 @@
+# Robots.txt for Dr. Ahmad Raza - Blesscure
+# https://drahmadrazapk.com
+
+User-agent: *
+Allow: /
+Disallow: /.git/
+
+Sitemap: https://drahmadrazapk.com/sitemap.xml
