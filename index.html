@@ -134,19 +134,20 @@
             </div>
         </section>
         <section id="about-me"
-            class="py-16 bg-surface-container-low relative overflow-hidden bg-cover bg-center bg-no-repeat bg-fixed"
+            class="py-6 bg-surface-container-low relative overflow-hidden bg-[length:100%_100%] md:bg-cover bg-center bg-no-repeat md:bg-fixed"
             style="background-image: url('img/about-bg.jpeg');">
             <!-- Text Readability Overlay -->
             <div class="absolute inset-0 bg-[#eff4f6]/20 dark:bg-[#171c1e]/30"></div>
             <!-- Asymmetric Background Accent -->
             <div class="absolute top-0 right-0 w-1/3 h-full bg-primary-fixed/10 -skew-x-6 translate-x-20"></div>
             <div class="container max-w-screen-2xl mx-auto px-8 relative z-10">
-                <div class="max-w-4xl mx-auto space-y-12 py-8">
+                <div class="max-w-4xl mx-auto space-y-12 py-2">
                     <div class="space-y-6 text-center">
 
                     </div>
                     <div
                         class="font-serif text-base md:text-xl leading-relaxed text-[#006385] dark:text-[#c2e8ff] font-medium space-y-4 px-4 md:px-0" data-aos="fade-up">
+                        <h2 class="text-center text-[#006385] dark:text-[#c2e8ff] font-bold text-4xl text-center py-2">Introduction</h3>
                         <p>Ahmad Raza is a BHMS(Bachelor of Homeopathic Medical Science) student in Islamia University
                             of Bahawalpur, Pakistan.</p>
                         <p>As a second generation Homeopathic practitioner, I am using and experiencing Homeopathic
@@ -155,7 +156,7 @@
                             obsessed with Homeopathy. At time, this website is just for knowledge about Homeopathy.</p>
                     </div>
                     <!-- Bento Grid Mini for Merits -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mt-8">
+                    <div class="hidden md:grid grid-cols-1 md:grid-cols-2 gap-8 text-left mt-8">
                         <div
                             class="bg-surface-container-lowest/90 backdrop-blur-sm p-8 rounded-xl border border-outline-variant/10 shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
                             <span class="material-symbols-outlined text-[#007bff] text-4xl mb-4"
@@ -172,6 +173,30 @@
                             <p class="text-sm text-on-surface-variant">Training to provide gentle, permanent solutions
                                 for chronic and acute ailments.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mobile Bento Grid for Merits (Outside image section to prevent stretching) -->
+        <section class="md:hidden py-6 px-6 bg-surface-container-low relative z-10">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="grid grid-cols-1 gap-8 text-left">
+                    <div
+                        class="bg-surface-container-lowest/90 backdrop-blur-sm p-8 rounded-xl border border-outline-variant/10 shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
+                        <span class="material-symbols-outlined text-[#007bff] text-4xl mb-4"
+                            data-icon="school">school</span>
+                        <h4 class="font-serif text-xl font-bold mb-2">Academic Scholar</h4>
+                        <p class="text-sm text-on-surface-variant">Proud recipient of the Honhaar Scholarship and PM
+                            Laptop Scheme merit awards.</p>
+                    </div>
+                    <div
+                        class="bg-surface-container-lowest/90 backdrop-blur-sm p-8 rounded-xl border border-outline-variant/10 shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="200">
+                        <span class="material-symbols-outlined text-[#007bff] text-4xl mb-4"
+                            data-icon="clinical_notes">clinical_notes</span>
+                        <h4 class="font-serif text-xl font-bold mb-2">Future Practice</h4>
+                        <p class="text-sm text-on-surface-variant">Training to provide gentle, permanent solutions
+                            for chronic and acute ailments.</p>
                     </div>
                 </div>
             </div>
@@ -249,7 +274,7 @@
                     style="background-image: url('img/about-homeopathy.jpeg');">
                     <div class="absolute inset-0 bg-[#006385]/70"></div>
                     <div class="relative z-10 text-center px-6 md:px-20 max-w-5xl" data-aos="zoom-in">
-                        <p class="text-white text-base md:text-xl leading-relaxed text-center italic">Homeopathy becomes
+                        <p class="text-white text-base md:text-xl leading-relaxed text-center italic">A holistic approach to healing , treat a person at mental, emotional and physical level, not just a disease. Homeopathy becomes
                             hope when Allopathy says "No cure" & just management or suppression (like Autoimmune
                             diseases). It becomes the need of every home in society when there are social problems like
                             fear, anxiety, irritability, or other mental complaints.</p>
@@ -456,7 +481,8 @@
                             href="#about-homeopathy">About Homeopathy</a></li>
                     <li><a class="text-[#171c1e]/60 dark:text-[#f5fafc]/60 hover:text-[#007ea7] underline-offset-4 hover:underline transition-all"
                             href="services.html">Services</a>
-                        <a class="text-[#171c1e]/70 dark:text-[#f5fafc]/70 hover:text-[#006385] transition-colors pl-4"
+                    </li>
+                    <li><a class="text-[#171c1e]/60 dark:text-[#f5fafc]/60 hover:text-[#007ea7] underline-offset-4 hover:underline transition-all"
                             href="#footer">Contact Us</a>
                     </li>
                 </ul>
